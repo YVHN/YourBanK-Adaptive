@@ -1,0 +1,13 @@
+.button {
+    padding: 14px 30px;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: $font1;
+    color: white;
+    border-radius: 80px;
+    cursor: pointer;
+}
+.button-fill {
+    color: $gray-shade2;
+    background: $brand-color1;
+}
