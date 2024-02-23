@@ -10,6 +10,7 @@
 
 @media screen and (max-width: 768px) {
     .welcome {
+        margin-top: 30px;
         flex-direction: column;
         text-align: center;
         &__info {

@@ -1,6 +1,7 @@
 .welcome {
-  margin-top: 110px !important;
+  margin-top: 110px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   &__text {
     width: 45vw;

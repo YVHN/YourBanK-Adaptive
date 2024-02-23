@@ -191,6 +191,10 @@ body .background__img {
   top: 0;
 }
 
+.block-scroll {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 768px) {
   .menu-burger {
     display: block;
@@ -328,8 +332,9 @@ body .background__img {
 }
 
 .welcome {
-  margin-top: 110px !important;
+  margin-top: 110px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .welcome__text {
@@ -421,6 +426,7 @@ body .background__img {
 }
 @media screen and (max-width: 768px) {
   .welcome {
+    margin-top: 30px;
     flex-direction: column;
     text-align: center;
   }
