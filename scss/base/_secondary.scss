@@ -1,0 +1,12 @@
+body {
+  background: $gray-shade1;
+  width: 32vw;
+
+  .background__img {
+    width: 36vw;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+  }
+}

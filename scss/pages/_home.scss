@@ -1,0 +1,45 @@
+.welcome {
+  margin-top: 110px !important;
+  display: flex;
+  justify-content: space-between;
+  &__text {
+    width: 45vw;
+    &-verify {
+      margin-bottom: 20px;
+      width: fit-content;
+      border-radius: 60px;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      & > img {
+        margin-right: 6px;
+      }
+      background: $gray-shade3;
+    }
+    &-title {
+      margin-bottom: 1.4vw;
+    }
+    &-description {
+      margin-bottom: 5vw;
+    }
+  }
+  &__info {
+    width: 45vw;
+    height: 100%;
+    position: relative;
+    &-transactions {
+      width: 35vw;
+      position: relative;
+      z-index: 10;
+      top: 0;
+      left: 11px;
+    }
+    &-arrows {
+      width: 25vw;
+      position: absolute;
+      z-index: 9;
+      top: 30px;
+      right: -11px;
+    }
+  }
+}

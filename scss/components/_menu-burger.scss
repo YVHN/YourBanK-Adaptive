@@ -7,7 +7,7 @@
     background: $brand-color1;
     border-radius: 80px;
     cursor: pointer;
-    z-index: 100;
+    z-index: 101;
     height: 40px;
     width: 56px;
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -47,7 +47,7 @@
     height: 100%;
     position: absolute;
     background: rgba(76, 76, 77, 0.9);
-    z-index: 5;
+    z-index: 100;
     transition: top 0.3s ease;
   }
 }

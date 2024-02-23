@@ -1,11 +1,17 @@
 .button {
-  padding: 14px 2.5vw;
+  display: inline-block;
+  width: fit-content;
+  padding: 14px 26px;
   font-weight: 400;
   font-size: 1.125rem;
   font-family: $font1;
   color: white;
   border-radius: 80px;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 .button-fill {
   color: $gray-shade2;
@@ -19,5 +25,5 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-}
+// @media screen and (max-width: 768px) {
+// }

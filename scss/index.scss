@@ -2,20 +2,31 @@
 @import './base/reset';
 @import './base/variables';
 @import './base/fonts';
+@import './base/secondary';
 
 //components
 @import './components/buttons';
 @import './components/menu-burger';
+@import './components/headlines';
+@import './components/paragraphs';
 
 //layouts
 @import './layouts/header';
 
-//media
-@import './media/header';
+//pages
+@import './pages/home.scss';
 
-body {
-  background: $gray-shade1;
+//media
+@import './media/secondary';
+@import './media/header';
+@import './media/home';
+
+.content {
+  width: 100%;
+  height: 100%;
   padding-top: 50px;
+  position: absolute;
+  z-index: 2;
 }
 
 .container {

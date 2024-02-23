@@ -1,0 +1,39 @@
+@media screen and (max-width: 1024px) {
+    .welcome {
+        &__info {
+            &-transactions {
+                width: 40vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .welcome {
+        flex-direction: column;
+        text-align: center;
+        &__info {
+            width: 100%;
+            
+            &-transactions {
+                width: 80vw;
+            }
+            &-arrows {
+                top: 0;
+                width: 50vw;
+            }
+        }
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 60px;
+
+            &__info {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.paragraph {
+  font-family: $font1;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: $white-shade1;
+}
+
+@media screen and (max-width: 1024px) {
+  .paragraph {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .paragraph {
+    font-size: 12px;
+  }
+}

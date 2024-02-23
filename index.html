@@ -8,8 +8,13 @@
   </head>
 
   <body>
-    <div class="container">
-      <header class="header">
+    <img
+      class="background__img"
+      src="./assets/images/different/mesh-back.svg"
+      alt=""
+    />
+    <div class="content">
+      <header class="header container">
         <img class="header__logo" src="../assets/images/logo.svg" alt="" />
         <nav class="header__navigation">
           <a href="#" class="header__navigation-item">Home</a>
@@ -30,7 +35,47 @@
           <div class="menu-burger__body"></div>
         </div>
       </header>
-      <script src="./js/burger.js"></script>
+      <section class="welcome container">
+        <div class="welcome__text">
+          <div class="welcome__text-verify">
+            <img
+              src="./assets/icons/verify.svg"
+              alt=""
+              class="welcome__text-verify-img"
+            />
+            <p class="welcome__text-verify-paragraph paragraph">
+              No LLC Required, No Credit Check.
+            </p>
+          </div>
+          <h1 class="welcome__text-title headline headline_xl">
+            Welcome to YourBank <br />
+            Empowering Your <span>Financial Journey</span>
+          </h1>
+          <p class="welcome__text-description paragraph">
+            At YourBank, our mission is to provide comprehensive banking
+            solutions that empower individuals and businesses to achieve their
+            financial goals. We are committed to delivering personalized and
+            innovative services that prioritize our customers' needs.
+          </p>
+          <a href="#" class="welcome__text-button button button-fill"
+            >Open Account</a
+          >
+        </div>
+        <div class="welcome__info">
+          <img
+            class="welcome__info-transactions"
+            src="./assets/images/transactions.png"
+            alt=""
+          />
+          <img
+            class="welcome__info-arrows"
+            src="./assets/images/arrows-back.svg"
+            alt=""
+          />
+        </div>
+      </section>
     </div>
+
+    <script src="./js/burger.js"></script>
   </body>
 </html>
