@@ -1,13 +1,23 @@
 .button {
-    padding: 14px 30px;
-    font-weight: 400;
-    font-size: 18px;
-    font-family: $font1;
-    color: white;
-    border-radius: 80px;
-    cursor: pointer;
+  padding: 14px 2.5vw;
+  font-weight: 400;
+  font-size: 1.125rem;
+  font-family: $font1;
+  color: white;
+  border-radius: 80px;
+  cursor: pointer;
 }
 .button-fill {
-    color: $gray-shade2;
-    background: $brand-color1;
+  color: $gray-shade2;
+  background: $brand-color1;
+}
+
+@media screen and (max-width: 1024px) {
+  .button {
+    font-size: 0.875rem;
+    padding: 12px 2.5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
 }

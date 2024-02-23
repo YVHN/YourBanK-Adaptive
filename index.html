@@ -3,10 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index.css" />
     <title>YourBanK | Online bank</title>
   </head>
+
   <body>
-    <div class="container"><iframe src="./modules/header.html" frameborder="0" width="100%"></iframe></div>
+    <div class="container">
+      <header class="header">
+        <img class="header__logo" src="../assets/images/logo.svg" alt="" />
+        <nav class="header__navigation">
+          <a href="#" class="header__navigation-item">Home</a>
+          <a href="#" class="header__navigation-item">Careers</a>
+          <a href="#" class="header__navigation-item">About</a>
+          <a href="#" class="header__navigation-item">Security</a>
+        </nav>
+        <div class="header__authorization">
+          <a href="#" class="button">Sign Up</a>
+          <a href="#" class="button button-fill">Login</a>
+        </div>
+        <div class="menu-burger">
+          <button class="menu-burger__button">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </button>
+          <div class="menu-burger__body"></div>
+        </div>
+      </header>
+      <script src="./js/burger.js"></script>
+    </div>
   </body>
 </html>

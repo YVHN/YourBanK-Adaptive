@@ -5,17 +5,21 @@
 
 //components
 @import './components/buttons';
+@import './components/menu-burger';
 
 //layouts
 @import './layouts/header';
 
+//media
+@import './media/header';
+
 body {
-    background: $gray-shade1;
-    padding-top: 50px;
+  background: $gray-shade1;
+  padding-top: 50px;
 }
 
 .container {
-    width: 85vw;
-    max-width: 1600px;
-    margin: 0 auto;
+  width: 85vw;
+  max-width: 1600px;
+  margin: 0 auto;
 }
