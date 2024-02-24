@@ -44,3 +44,118 @@
     }
   }
 }
+.products {
+  margin-top: 160px;
+  &__navigation {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-description {
+      width: 55%;
+    }
+    &-buttons {
+      border: 1px solid $gray-shade3;
+      border-radius: 80px;
+      padding: 15px;
+      background: $gray-shade2;
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    &-item {
+      text-align: center;
+      padding: 0 50px 25px;
+      &-title {
+        margin: 20px 0px;
+      }
+      &:first-child {
+        padding-left: 0px;
+        border-right: 1px solid $gray-shade3;
+      }
+      &:last-child {
+        padding-right: 0px;
+        border-left: 1px solid $gray-shade3;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+.cases {
+  &__title {
+    margin-bottom: 15px;
+  }
+  &__content {
+    margin-top: 60px;
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
+    }
+    &-benefits {
+      width: 50%;
+      position: relative;
+      border-radius: 20px;
+      padding: 3vw;
+      background: $gray-shade2;
+      &-img-left {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &-list {
+        display: grid;
+        grid-template-rows: 226px 196px;
+        grid-template-columns: repeat(2, 45%);
+        position: relative;
+        z-index: 3;
+        grid-gap: 20px;
+        &-item {
+          background: $gray-shade1;
+          padding: 15px;
+          border-radius: 16px;
+          border: 1px solid $gray-shade3;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          &-title {
+            margin-top: 20px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    &-statistics {
+      width: 46%;
+      &-title {
+        margin-bottom: 10px;
+      }
+      &-list {
+        margin: 60px 0px;
+        display: flex;
+        &-item {
+          &:first-child {
+            padding-right: 1.9vw;
+            border-right: 3px dashed $gray-shade3;
+          }
+          &:nth-child(2) {
+            padding: 0px 1.9vw;
+          }
+          &:last-child {
+            padding-left: 1.9vw;
+            border-left: 3px dashed $gray-shade3;
+          }
+        }
+      }
+      &-button {
+        background: $gray-shade2;
+        border: 1px solid $gray-shade3;
+      }
+    }
+  }
+}

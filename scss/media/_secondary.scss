@@ -4,6 +4,16 @@
       width: 500px;
     }
   }
+  .icon {
+    &-block {
+      width: 64px;
+      height: 64px;
+    }
+    &-image {
+      width: 28px;
+      height: 28px;
+    }
+  }
 }
 @media screen and (max-width: 768px) {
   body {

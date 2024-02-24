@@ -1,40 +1,104 @@
 @media screen and (max-width: 1024px) {
-    .welcome {
-        &__info {
-            &-transactions {
-                width: 40vw;
-            }
-        }
+  .welcome {
+    &__info {
+      &-transactions {
+        width: 40vw;
+      }
     }
+  }
+  .products {
+    margin-top: 110px;
+    &__navigation {
+      &-description {
+        width: 45%;
+      }
+    }
+  }
+  .cases {
+    &__content {
+      &-benefits {
+        &-list {
+          grid-template-rows: 174px 150px;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .welcome {
-        margin-top: 30px;
-        flex-direction: column;
-        text-align: center;
-        &__info {
-            width: 100%;
-            
-            &-transactions {
-                width: 80vw;
-            }
-            &-arrows {
-                top: 0;
-                width: 50vw;
-            }
-        }
+  .welcome {
+    margin-top: 30px;
+    flex-direction: column;
+    text-align: center;
+    &__info {
+      width: 100%;
 
-        &__text {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            margin-bottom: 60px;
-
-            &__info {
-                width: 100%;
-            }
-        }
+      &-transactions {
+        width: 80vw;
+      }
+      &-arrows {
+        top: 0;
+        width: 50vw;
+      }
     }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 60px;
+
+      &__info {
+        width: 100%;
+      }
+    }
+  }
+  .products {
+    margin-top: 70px;
+    &__title {
+      text-align: center;
+    }
+    &__navigation {
+      flex-direction: column;
+      &-description {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    &__list {
+      flex-direction: column;
+      margin-top: 30px;
+      &-item {
+        padding: 30px 50px 25px;
+        &:first-child {
+          border: 0;
+          border-bottom: 1px solid $gray-shade3;
+          padding: 30px 50px 25px;
+        }
+        &:last-child {
+          border: 0;
+          border-top: 1px solid $gray-shade3;
+          padding: 30px 50px 25px;
+        }
+      }
+    }
+  }
+  .cases {
+    &__content {
+      &-wrapper {
+        flex-direction: column;
+      }
+      &-benefits {
+        width: 100%;
+        &-list {
+          grid-template-rows: 160px 160px;
+        }
+      }
+      &-statistics {
+        width: 100%;
+      }
+    }
+  }
 }

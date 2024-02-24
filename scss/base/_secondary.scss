@@ -10,3 +10,20 @@ body {
     z-index: 1;
   }
 }
+
+.icon {
+  width: fit-content;
+  position: relative;
+  &-block {
+    width: 96px;
+    height: 96px;
+  }
+  &-image {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

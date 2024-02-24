@@ -32,9 +32,7 @@
 
 @media screen and (max-width: 1024px) {
   .headline_xll {
-    font-size: 3.625rem;
-    font-weight: 500;
-    color: $brand-color1;
+    font-size: 2.5rem;
   }
   .headline_xl {
     font-size: 2rem;
@@ -43,21 +41,19 @@
     font-size: 2.5rem;
   }
   .headline_m {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   .headline_s {
     font-size: 1.375rem;
     font-weight: 400;
   }
   .headline_xs {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 768px) {
   .headline_xll {
-    font-size: 3.625rem;
-    font-weight: 500;
-    color: $brand-color1;
+    font-size: 2.5rem;
   }
   .headline_xl {
     font-size: 1.75rem;
@@ -73,6 +69,6 @@
     font-weight: 400;
   }
   .headline_xs {
-    font-size: 1.25rem;
+    font-size: 0.875rem;
   }
 }
