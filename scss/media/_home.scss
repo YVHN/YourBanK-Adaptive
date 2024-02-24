@@ -87,10 +87,12 @@
   }
   .cases {
     &__content {
+      margin: 0;
       &-wrapper {
         flex-direction: column;
       }
       &-benefits {
+        margin-top: 60px;
         width: 100%;
         &-list {
           grid-template-rows: 160px 160px;

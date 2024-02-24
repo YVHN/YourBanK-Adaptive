@@ -631,10 +631,14 @@ body .background__img {
     border-top: 1px solid #262626;
     padding: 30px 50px 25px;
   }
+  .cases__content {
+    margin: 0;
+  }
   .cases__content-wrapper {
     flex-direction: column;
   }
   .cases__content-benefits {
+    margin-top: 60px;
     width: 100%;
   }
   .cases__content-benefits-list {
