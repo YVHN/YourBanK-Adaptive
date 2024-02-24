@@ -349,6 +349,74 @@ body .background__img {
   background: #262626;
 }
 
+.footer {
+  margin-top: 120px;
+  background: #1c1c1c;
+  padding: 100px 0px 50px;
+}
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-wrapper > img {
+  width: 156px;
+  height: 40px;
+}
+.footer__navigation {
+  margin: 50px 0px;
+}
+.footer__navigation-item {
+  display: inline-block;
+  padding: 12px 1.5vw;
+  color: white;
+  font-weight: 400;
+  font-size: 1.125rem;
+  font-family: "Lexend", "sans-serif";
+  border-radius: 80px;
+}
+.footer__contacts {
+  border-bottom: 1px solid #262626;
+  border-top: 1px solid #262626;
+  padding: 40px 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer__contacts-item {
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+}
+.footer__contacts-item > img {
+  margin-right: 5px;
+}
+.footer__additional {
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  background: #191919;
+  margin-top: 50px;
+  border-radius: 100px;
+  border: 1px solid #262626;
+  padding: 16px 30px 16px 16px;
+}
+.footer__additional-media {
+  display: flex;
+}
+.footer__additional-media-item {
+  margin-right: 15px;
+  border-radius: 50%;
+  padding: 15px;
+  background: #caff33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .welcome {
   margin-top: 110px;
   display: flex;
@@ -732,6 +800,38 @@ body .background__img {
   }
   .header .menu-burger {
     display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 50px 25px;
+  }
+  .footer__navigation {
+    margin: 20px 0px;
+  }
+  .footer__navigation-item {
+    font-size: 14px;
+  }
+  .footer__contacts {
+    padding: 20px 0px;
+  }
+  .footer__additional {
+    border-radius: 10px;
+    padding: 50px 0px 30px;
+    flex-direction: column;
+  }
+  .footer__additional-media {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+  }
+  .footer__additional-rights {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+  }
+  .footer__additional-privacy {
+    font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 1024px) {

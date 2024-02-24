@@ -12,6 +12,7 @@
 
 //layouts
 @import './layouts/header';
+@import './layouts/footer';
 
 //pages
 @import './pages/home.scss';
@@ -19,6 +20,7 @@
 //media
 @import './media/secondary';
 @import './media/header';
+@import './media/footer';
 @import './media/home';
 
 .content {
