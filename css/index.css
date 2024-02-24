@@ -275,8 +275,7 @@ body .background__img {
     font-size: 1.25rem;
   }
   .headline_s {
-    font-size: 1.375rem;
-    font-weight: 400;
+    font-size: 1.125rem;
   }
   .headline_xs {
     font-size: 1rem;
@@ -296,8 +295,7 @@ body .background__img {
     font-size: 1.5rem;
   }
   .headline_s {
-    font-size: 1.375rem;
-    font-weight: 400;
+    font-size: 1.125rem;
   }
   .headline_xs {
     font-size: 0.875rem;
@@ -511,6 +509,54 @@ body .background__img {
   border: 1px solid #262626;
 }
 
+.features__description {
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.features__content {
+  display: flex;
+  justify-content: space-between;
+}
+.features__content-navigation {
+  height: fit-content;
+  margin-right: 5%;
+  border-radius: 10px;
+  background: #1c1c1c;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.features__content-navigation-button {
+  background: #1c1c1c;
+  border: 1px solid #262626;
+}
+.features__content-navigation-button:nth-child(2) {
+  margin: 24px 0px;
+}
+.features__content-list {
+  width: 80%;
+  display: grid;
+  grid-template-rows: repeat(2, 272px);
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 30px;
+}
+.features__content-list-item {
+  padding: 50px;
+  background: #1c1c1c;
+  border: 1px solid #262626;
+  border-radius: 10px;
+}
+.features__content-list-item-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.features__content-list-item-header-img {
+  width: 34px;
+  height: 34px;
+}
+
 @media screen and (max-width: 1024px) {
   body .background__img {
     width: 500px;
@@ -572,6 +618,16 @@ body .background__img {
   }
   .cases__content-benefits-list {
     grid-template-rows: 174px 150px;
+  }
+  .features__content-navigation {
+    padding: 35px;
+  }
+  .features__content-list-item {
+    padding: 20px;
+  }
+  .features__content-list-item-header-img {
+    width: 24px;
+    height: 24px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -646,6 +702,28 @@ body .background__img {
   }
   .cases__content-statistics {
     width: 100%;
+  }
+  .features {
+    text-align: center;
+  }
+  .features__description {
+    width: 100%;
+  }
+  .features__content {
+    flex-direction: column;
+  }
+  .features__content-navigation {
+    padding: 20px;
+    flex-direction: row;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .features__content-list {
+    grid-template-rows: repeat(4, 232px);
+    grid-template-columns: 100%;
+    margin: 20px auto 0px;
+    grid-gap: 20px;
   }
 }
 .content {
