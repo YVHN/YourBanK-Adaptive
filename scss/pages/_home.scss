@@ -46,6 +46,7 @@
 }
 .products {
   margin-top: 160px;
+  margin-bottom: 100px;
   &__navigation {
     margin-top: 20px;
     display: flex;
@@ -187,7 +188,6 @@
     &-list {
       width: 80%;
       display: grid;
-      grid-template-rows: repeat(2, 272px);
       grid-template-columns: repeat(2, 50%);
       grid-gap: 30px;
       &-item {
@@ -205,6 +205,39 @@
           }
         }
       }
+    }
+  }
+}
+.questions {
+  margin-top: 60px;
+  &__description {
+    margin-bottom: 80px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 47%);
+    grid-gap: 30px;
+    mask: linear-gradient(360deg, transparent 0%, black 60%);
+    &-item {
+      padding: 50px;
+      background: $gray-shade2;
+      border: 1px solid $gray-shade3;
+      border-radius: 10px;
+      &-title {
+        padding-bottom: 30px;
+        border-bottom: 1px solid $gray-shade3;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &__button {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background: $gray-shade2;
+    border: 1px solid $gray-shade3;
+    & > img {
+      margin-left: 5px;
     }
   }
 }
