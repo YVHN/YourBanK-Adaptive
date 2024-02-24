@@ -48,6 +48,35 @@
       }
     }
   }
+  .testimonials {
+    &__navigation {
+      &-description {
+        width: 45%;
+      }
+    }
+    &__content {
+      &-list {
+        padding: 40px 70px 0px;
+        &-item {
+          &-img-wrapper {
+            padding: 0px 14px;
+            top: -25px;
+            & > img {
+              width: 44px;
+              height: 44px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .open-account {
+    &__img {
+      width: 202px;
+      height: 192px;
+      left: -5px;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -150,6 +179,7 @@
     }
   }
   .questions {
+    margin-bottom: 150px;
     &__title {
       text-align: center;
     }
@@ -163,6 +193,51 @@
       &-item {
         padding: 30px;
       }
+    }
+  }
+  .testimonials {
+    &__title {
+      text-align: center;
+    }
+    &__navigation {
+      flex-direction: column;
+      &-description {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    &__content {
+      padding: 0px 0px 0px;
+      &-arrow {
+        display: none;
+      }
+      &-list {
+        padding: 40px 0px;
+        margin: 0;
+        flex-direction: column;
+        &-item {
+          margin-top: 80px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .open-account {
+    margin-top: 50px;
+    text-align: center;
+    padding: 40px 40px 100px;
+    &__description {
+      width: 100%;
+    }
+    &__img {
+      width: 151px;
+      height: 143px;
+    }
+    &__button {
+      bottom: 30px;
+      right: 50%;
+      transform: translateX(50%);
     }
   }
 }

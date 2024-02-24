@@ -591,6 +591,100 @@ body .background__img {
   margin-left: 5px;
 }
 
+.testimonials__navigation {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonials__navigation-description {
+  width: 55%;
+}
+.testimonials__navigation-buttons {
+  border: 1px solid #262626;
+  border-radius: 80px;
+  padding: 15px;
+  background: #1c1c1c;
+}
+.testimonials__content {
+  position: relative;
+  width: 100%;
+}
+.testimonials__content-arrow {
+  background: #1c1c1c;
+  border-radius: 50%;
+  border: 1px solid #262626;
+  padding: 15px;
+  top: 50%;
+  position: absolute;
+}
+.testimonials__content-left-arrow {
+  left: 16px;
+  transform: translate(-50%);
+}
+.testimonials__content-right-arrow {
+  right: 16px;
+  transform: translate(50%) rotate(180deg);
+}
+.testimonials__content-list {
+  margin-top: 120px;
+  display: flex;
+  padding: 40px 6vw 0px;
+  justify-content: space-between;
+}
+.testimonials__content-list-item {
+  position: relative;
+  border-top: 1px solid #262626;
+  padding-top: 50px;
+  width: 30%;
+  text-align: center;
+}
+.testimonials__content-list-item-img-wrapper {
+  position: absolute;
+  padding: 0 20px;
+  background: #191919;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.testimonials__content-list-item-img-wrapper > img {
+  width: 60px;
+  height: 60px;
+}
+.testimonials__content-list-item-person {
+  font-family: "Lexend", "sans-serif";
+  margin-top: 30px;
+  text-align: center;
+  color: #caff33;
+  font-size: 0.875rem;
+}
+
+.open-account {
+  margin-top: 100px;
+  position: relative;
+  border: 1px solid #262626;
+  border-radius: 20px;
+  padding: 80px;
+}
+.open-account__description {
+  margin-top: 20px;
+  width: 70%;
+}
+.open-account__button {
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  right: 20px;
+}
+.open-account__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.open-account__title {
+  font-weight: 400;
+}
+
 @media screen and (max-width: 1024px) {
   body .background__img {
     width: 500px;
@@ -665,6 +759,25 @@ body .background__img {
   }
   .questions__list-item {
     padding: 30px;
+  }
+  .testimonials__navigation-description {
+    width: 45%;
+  }
+  .testimonials__content-list {
+    padding: 40px 70px 0px;
+  }
+  .testimonials__content-list-item-img-wrapper {
+    padding: 0px 14px;
+    top: -25px;
+  }
+  .testimonials__content-list-item-img-wrapper > img {
+    width: 44px;
+    height: 44px;
+  }
+  .open-account__img {
+    width: 202px;
+    height: 192px;
+    left: -5px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -761,6 +874,9 @@ body .background__img {
     margin: 20px auto 0px;
     grid-gap: 20px;
   }
+  .questions {
+    margin-bottom: 150px;
+  }
   .questions__title {
     text-align: center;
   }
@@ -774,6 +890,49 @@ body .background__img {
   }
   .questions__list-item {
     padding: 30px;
+  }
+  .testimonials__title {
+    text-align: center;
+  }
+  .testimonials__navigation {
+    flex-direction: column;
+  }
+  .testimonials__navigation-description {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .testimonials__content {
+    padding: 0px 0px 0px;
+  }
+  .testimonials__content-arrow {
+    display: none;
+  }
+  .testimonials__content-list {
+    padding: 40px 0px;
+    margin: 0;
+    flex-direction: column;
+  }
+  .testimonials__content-list-item {
+    margin-top: 80px;
+    width: 100%;
+  }
+  .open-account {
+    margin-top: 50px;
+    text-align: center;
+    padding: 40px 40px 100px;
+  }
+  .open-account__description {
+    width: 100%;
+  }
+  .open-account__img {
+    width: 151px;
+    height: 143px;
+  }
+  .open-account__button {
+    bottom: 30px;
+    right: 50%;
+    transform: translateX(50%);
   }
 }
 .content {

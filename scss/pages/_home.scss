@@ -241,3 +241,97 @@
     }
   }
 }
+.testimonials {
+  &__navigation {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-description {
+      width: 55%;
+    }
+    &-buttons {
+      border: 1px solid $gray-shade3;
+      border-radius: 80px;
+      padding: 15px;
+      background: $gray-shade2;
+    }
+  }
+  &__content {
+    position: relative;
+    width: 100%;
+    &-arrow {
+      background: $gray-shade2;
+      border-radius: 50%;
+      border: 1px solid $gray-shade3;
+      padding: 15px;
+      top: 50%;
+      position: absolute;
+    }
+    &-left-arrow {
+      left: 16px;
+      transform: translate(-50%);
+    }
+    &-right-arrow {
+      right: 16px;
+      transform: translate(50%) rotate(180deg);
+    }
+    &-list {
+      margin-top: 120px;
+      display: flex;
+      padding: 40px 6vw 0px;
+      justify-content: space-between;
+      &-item {
+        position: relative;
+        border-top: 1px solid $gray-shade3;
+        padding-top: 50px;
+        width: 30%;
+        text-align: center;
+        &-img-wrapper {
+          position: absolute;
+          padding: 0 20px;
+          background: $gray-shade1;
+          top: -30px;
+          left: 50%;
+          transform: translateX(-50%);
+          & > img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+        &-person {
+          font-family: $font1;
+          margin-top: 30px;
+          text-align: center;
+          color: $brand-color1;
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+}
+.open-account {
+  margin-top: 100px;
+  position: relative;
+  border: 1px solid $gray-shade3;
+  border-radius: 20px;
+  padding: 80px;
+  &__description {
+    margin-top: 20px;
+    width: 70%;
+  }
+  &__button {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    right: 20px;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__title {
+    font-weight: 400;
+  }
+}
